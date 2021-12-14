@@ -57,6 +57,12 @@ li {
 .fahr {
   text-decoration: none;
 }
+.celsius {
+  text-decoration: none;
+  color: #7e32b3;
+  cursor: default;
+}
+
 .bottom-page {
   position: relative;
   top: -16px;
@@ -74,7 +80,7 @@ li {
 .submitSearch {
   color: #ffc154;
   background-color: #7e32b3;
-  border-radius: 10px;
+  border-radius: 5px;
   transition: all 200ms ease-in-out;
 }
 .submitSearch:hover {
@@ -85,7 +91,7 @@ li {
 .tempNow {
   color: #ffc154;
   background-color: #7e32b3;
-  border-radius: 10px;
+  border-radius: 5px;
   transition: all 200ms ease-in-out;
 }
 .tempNow:hover {
