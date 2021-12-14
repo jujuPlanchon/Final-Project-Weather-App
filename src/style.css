@@ -20,6 +20,7 @@ li {
   color: #7e32b3;
   font-size: 16px;
   font-weight: 100;
+  text-transform: capitalize;
 }
 .all {
   max-width: 600px;
@@ -62,4 +63,33 @@ li {
 }
 .link-github {
   text-decoration: none;
+}
+.searchbar {
+  width: 60%;
+  border-radius: 5px;
+  border-color: #7e32b3;
+  margin-left: 2px;
+  margin-bottom: 5px;
+}
+.submitSearch {
+  color: #b1a99d;
+  background-color: #7e32b3;
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+}
+.submitSearch:hover {
+  color: #7e32b3;
+  background-color: #ffc154;
+  cursor: pointer;
+}
+.tempNow {
+  color: #ffc154;
+  background-color: #7e32b3;
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+}
+.tempNow:hover {
+  color: #7e32b3;
+  background-color: #ffc154;
+  cursor: pointer;
 }
