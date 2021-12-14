@@ -35,7 +35,7 @@ if (minutes < 10) {
 hoursNow.innerHTML = `${hours}:${minutes}`;
 
 function showTemperature(response) {
-  let h1 = document.querySelector("h1");
+  let h1 = document.querySelector("#city");
   h1.innerHTML = response.data.name;
   let idTemperature = document.querySelector("#temp");
   celsiusTemperature = response.data.main.temp;
