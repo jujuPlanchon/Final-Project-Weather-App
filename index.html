@@ -21,10 +21,11 @@
       <div class="all">
         <div class="weather-app">
           <div class="overview">
-            <h1>Genève</h1>
+            <h1 id="city"></h1>
             <ul>
-              <li>13 Dec 11:03</li>
-              <li>Clear</li>
+              <li id="date">Mon, 13 Dec 2021</li>
+              <li id="hour">10:47</li>
+              <li id="description">Clear</li>
             </ul>
           </div>
           <div class="row">
@@ -36,7 +37,7 @@
                   class="float-left"
                 />
                 <span class="float-left"
-                  ><strong>12</strong
+                  ><strong id="temp">12</strong
                   ><span class="units"
                     >°C | <a class="fahr" href="#">°F</a></span
                   >
@@ -46,11 +47,31 @@
             <div class="col-6">
               <ul>
                 <li>Precipitation: 2%</li>
-                <li>Humidity: 84%</li>
-                <li>Wind: 8km/h</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span>km/h</li>
               </ul>
             </div>
           </div>
+          <form id="search-city">
+            <input
+              type="text"
+              class="searchbar"
+              id="search-bar"
+              placeholder="Search"
+            />
+            <input
+              type="submit"
+              class="submitSearch"
+              id="submit-search"
+              value="Search"
+            />
+            <input
+              type="button"
+              class="tempNow"
+              id="temp-now"
+              value="Current"
+            />
+          </form>
         </div>
         <small class="bottom-page">
           <a
