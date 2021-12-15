@@ -32,7 +32,7 @@ li {
   margin: 30px auto;
   padding: 20px;
   background-color: #7ef7fa;
-
+  box-shadow: rgba(0, 0, 0.2);
   border-radius: 5px;
 }
 .overview {
@@ -66,9 +66,9 @@ li {
 }
 
 .bottom-page {
-  text-align: center;
   position: relative;
   top: -16px;
+  left: 120px;
 }
 .link-github {
   text-decoration: none;
