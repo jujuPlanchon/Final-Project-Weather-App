@@ -54,33 +54,6 @@ function showTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-function okSubmit(event) {
-  event.preventDefault();
-  let city = document.querySelector("#search-bar").value;
-  let apiKey = "f9b144c081d097692afbbd4e19bdc435";
-  let units = "metric";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
-  axios.get(apiUrl).then(showTemperature);
-}
-
-let formSearch = document.querySelector("#search-city");
-formSearch.addEventListener("submit", okSubmit);
-
-function currentPosition(position) {
-  let apiKey = "f9b144c081d097692afbbd4e19bdc435";
-  let units = "metric";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=${units}`;
-  axios.get(apiUrl).then(showTemperature);
-}
-
-function getCurrentLocation(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(currentPosition);
-}
-
-let locationBtn = document.querySelector("#temp-now");
-locationBtn.addEventListener("click", getCurrentLocation);
-
 function showFahrenheit(event) {
   event.preventDefault();
 
@@ -102,3 +75,35 @@ function showCelsius(event) {
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsius);
+
+function search(city) {
+  let apiKey = "f9b144c081d097692afbbd4e19bdc435";
+  let units = "metric";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl).then(showTemperature);
+}
+
+function okSubmit(event) {
+  event.preventDefault();
+  let city = document.querySelector("#search-bar");
+  search(city.value);
+}
+
+let formSearch = document.querySelector("#search-city");
+formSearch.addEventListener("submit", okSubmit);
+search("Genève");
+
+function currentPosition(position) {
+  let apiKey = "f9b144c081d097692afbbd4e19bdc435";
+  let units = "metric";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl).then(showTemperature);
+}
+
+function getCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(currentPosition);
+}
+
+let locationBtn = document.querySelector("#temp-now");
+locationBtn.addEventListener("click", getCurrentLocation);
