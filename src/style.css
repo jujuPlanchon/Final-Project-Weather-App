@@ -31,7 +31,7 @@ li {
   max-width: 600px;
   margin: 30px auto;
   padding: 20px;
-  background-color: #7ef7fa;
+  background-color: #9be8f6;
   box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
   border-radius: 5px;
 }
@@ -82,7 +82,7 @@ li {
   margin-bottom: 3px;
 }
 .submitSearch {
-  color: #3bf1f7;
+  color: #9be8f6;
   background-color: #7e32b3;
   padding: 2px;
   border-radius: 5px;
@@ -91,22 +91,22 @@ li {
 }
 .submitSearch:hover {
   color: #7e32b3;
-  background-color: #36e5eb;
-  border: 1px solid #3bf1f7;
+  background-color: #9be8f6;
+  border: 1px solid #9be8f6;
   cursor: pointer;
 }
 .tempNow {
-  color: #3bf1f7;
+  color: #9be8f6;
   background-color: #7e32b3;
   padding: 3px;
   border-radius: 5px;
-  border: 1px solid #3bf1f7;
+  border: 1px solid #9be8f6;
   transition: all 200ms ease-in-out;
 }
 .tempNow:hover {
   color: #7e32b3;
-  background-color: #36e5eb;
-  border: 1px solid #3bf1f7;
+  background-color: #9be8f6;
+  border: 1px solid #9be8f6;
   cursor: pointer;
 }
 .dailyforecast {
