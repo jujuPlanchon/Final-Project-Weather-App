@@ -84,7 +84,7 @@ li {
 .submitSearch {
   color: #9be8f6;
   background-color: #7e32b3;
-  padding: 2px;
+
   border-radius: 5px;
   border: 1px solid #7e32b3;
   transition: all 200ms ease-in-out;
