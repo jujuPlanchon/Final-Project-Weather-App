@@ -84,6 +84,7 @@ li {
 .submitSearch {
   color: #9be8f6;
   background-color: #7e32b3;
+  font-size: 15px;
 
   border-radius: 5px;
   border: 1px solid #7e32b3;
@@ -98,7 +99,8 @@ li {
 .tempNow {
   color: #9be8f6;
   background-color: #7e32b3;
-  padding: 3px;
+  font-size: 16px;
+
   border-radius: 5px;
   border: 1px solid #9be8f6;
   transition: all 200ms ease-in-out;
